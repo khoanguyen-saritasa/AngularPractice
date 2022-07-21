@@ -1,0 +1,7 @@
+<p>home works!</p>
+<div>
+  <h3>Your name is {{ name }} </h3>
+  <input [ngClass]="[name, 'color_red']" *ngIf="name" [(ngModel)]="name" [title]="'Day la ' + name"/>
+  <button (click)="resetName()">Reset name</button>
+  <h1 *ngFor="let item of arrayName; let i = index">{{i + 1}}. {{item}}</h1>
+</div>
